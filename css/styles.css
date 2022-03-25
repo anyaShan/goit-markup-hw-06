@@ -512,8 +512,6 @@ footer > .conteiner {
   flex-direction: column;
   width: 570px;
   margin-left: auto;
-
-  outline: 1px solid tomato;
 }
 .footer-form-titel {
   margin-bottom: 20px;
@@ -530,7 +528,6 @@ footer > .conteiner {
   align-items: stretch;
 }
 .mailing-input {
-  outline: 1px solid tomato;
   position: relative;
   display: flex;
   width: 100%;
@@ -668,18 +665,14 @@ footer > .conteiner {
   letter-spacing: 0.06em;
 }
 .footer-button {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   margin-left: 12px;
 }
-.footer-button::after {
-  display: inline-block;
+.footer-button > .icon {
   margin-left: 10px;
-  content: '';
-  width: 24px;
-  height: 24px;
-  background-image: url(../images/icon-send.svg);
 }
+
 .hero-button:hover,
 .hero-button:focus,
 .footer-button:hover,
