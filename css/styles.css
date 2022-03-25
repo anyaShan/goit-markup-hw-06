@@ -505,21 +505,12 @@ footer > .conteiner {
   fill: var(--background-primary-color);
 }
 
-/* Portfolio navigation*/
-
-.works-nav {
-  margin-bottom: 50px;
-  display: flex;
-  justify-content: center;
-}
-.works-nav-item:not(:last-child) {
-  margin-right: 8px;
-}
-
 /* Footer mailing */
+
 .footer-form {
   display: flex;
   flex-direction: column;
+  width: 570px;
   margin-left: auto;
 
   outline: 1px solid tomato;
@@ -535,11 +526,14 @@ footer > .conteiner {
 }
 .mailing-field {
   display: flex;
+
   align-items: stretch;
 }
 .mailing-input {
+  outline: 1px solid tomato;
   position: relative;
   display: flex;
+  width: 100%;
 }
 .mailing-input > label {
   position: absolute;
@@ -552,10 +546,22 @@ footer > .conteiner {
 }
 .mailing-input > input {
   display: inline-block;
+  padding-left: 16px;
   width: 100%;
   border: var(--border-footer-mailing);
   border-radius: 4px;
   background-color: transparent;
+}
+
+/* Portfolio navigation*/
+
+.works-nav {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+.works-nav-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 /* Portfolio Works */
@@ -662,7 +668,17 @@ footer > .conteiner {
   letter-spacing: 0.06em;
 }
 .footer-button {
+  display: inline-flex;
+  align-items: center;
   margin-left: 12px;
+}
+.footer-button::after {
+  display: inline-block;
+  margin-left: 10px;
+  content: '';
+  width: 24px;
+  height: 24px;
+  background-image: url(../images/icon-send.svg);
 }
 .hero-button:hover,
 .hero-button:focus,
