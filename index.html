@@ -503,6 +503,42 @@
             <use href="./images/icons.svg#close-black"></use>
           </svg>
         </button>
+
+        <!-- Modal form -->
+
+        <form name="modal-form" autocomplete="on" class="modal-form">
+          <b class="modal-form-titel">Оставьте свои данные, мы вам перезвоним</b>
+
+          <div class="user-input">
+            <div class="modal-form-field">
+              <label for="user-name">Имя</label>
+              <input type="text" name="user-name" id="user-name" autofocus />
+            </div>
+
+            <div class="modal-form-field">
+              <label for="tel">Телефон</label>
+              <input type="tel" name="tel" id="tel" />
+            </div>
+
+            <div class="modal-form-field">
+              <label for="email">Почта</label>
+              <input type="email" name="email" id="email" />
+            </div>
+
+            <div class="modal-form-comment">
+              <label for="comment">Комментарий</label>
+              <textarea name="comment" id="comment" placeholder="Введите текст"></textarea>
+            </div>
+          </div>
+
+          <div class="modal-form-policy">
+            <input type="checkbox" name="policy" id="policy" />
+            <label for="policy">Соглашаюсь с рассылкой и принимаю</label>
+            <a href="" class="link">Условия договора</a>
+          </div>
+
+          <button type="submit" class="modal-form-button">Отправить</button>
+        </form>
       </div>
     </div>
 
