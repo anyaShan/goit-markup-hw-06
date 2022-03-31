@@ -803,7 +803,7 @@ footer > .conteiner {
   flex-direction: column;
   margin-bottom: 10px;
 }
-.modal-form-field > span,
+.modal-form-input > span,
 .modal-form-comment > span {
   margin-bottom: 4px;
 
@@ -822,6 +822,7 @@ footer > .conteiner {
   height: 40px;
   border: var(--border-model-input);
   border-radius: 4px;
+  outline: 0px;
 
   transition: border var(--transition);
 
@@ -843,9 +844,9 @@ footer > .conteiner {
 }
 .modal-form-input > .icon {
 position: absolute;
-top: 50%;
+bottom: 0;
 left: 12px;
- transform: translateY(-50%);
+ transform: translateY(-11px);
  transition: fill var(--transition);
 }
 .modal-form-comment {
@@ -859,6 +860,7 @@ left: 12px;
   border: var(--border-model-input);
   border-radius: 4px;
   resize: none;
+  outline: 0px;
 
   font-size: 12px;
   line-height: 1.17;
