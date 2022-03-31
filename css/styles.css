@@ -83,7 +83,7 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-/* LOGO */
+/* ------------------------------------LOGO------------------------------ */
 
 .logo-nav,
 .logo-footer {
@@ -109,7 +109,7 @@ img {
   color: var(--white-text-color);
 }
 
-/* Conteiner Header */
+/* ------------------------------Conteiner Header------------------------ */
 
 .header {
   position: fixed;
@@ -130,7 +130,7 @@ img {
 .header-page {
   display: flex;
 }
-/* Header navigation */
+/* --------------------------Header navigation---------------------------- */
 
 .header-nav {
   display: flex;
@@ -170,11 +170,8 @@ img {
   border-radius: 2px;
   background-color: var(--accent-color);
 }
-/* .header-nav-list > .item.current::after {
-  position: absolute;
-} */
 
-/* Header Contects */
+/* -------------------------------Header Contects-------------------------- */
 
 .header-contacts {
   display: flex;
@@ -205,7 +202,7 @@ img {
   fill: var(--accent-color);
 }
 
-/* Hero */
+/* ---------------------------------Hero-------------------------------- */
 
 .hero {
   max-width: 1600px;
@@ -236,7 +233,7 @@ img {
   text-transform: uppercase;
 }
 
-/* Sections */
+/* -------------------------------Sections------------------------------- */
 
 .section {
   padding: 94px 0;
@@ -250,7 +247,7 @@ img {
   text-align: center;
 }
 
-/* Specifics */
+/* ----------------------------------Specifics-------------------------- */
 
 .specifics-list {
   display: flex;
@@ -288,7 +285,7 @@ img {
   line-height: 1.7;
 }
 
-/* Features */
+/* --------------------------------Features------------------------------ */
 
 .features-content.section {
   padding-top: 0;
@@ -326,7 +323,7 @@ img {
   text-transform: uppercase;
 }
 
-/* Team */
+/* --------------------------------Team---------------------------------- */
 
 .team-content {
   background-color: var(--background-secondary-color);
@@ -392,7 +389,7 @@ img {
   fill: var(--background-primary-color);
 }
 
-/* Clients */
+/* -------------------------------Clients------------------------------- */
 
 .clients-title {
   margin-bottom: 50px;
@@ -426,7 +423,7 @@ img {
   fill: var(--accent-color);
 }
 
-/* Footer */
+/* ---------------------------------Footer---------------------------- */
 
 footer {
   padding-top: 60px;
@@ -437,7 +434,8 @@ footer > .conteiner {
   display: flex;
   align-items: baseline;
 }
-/* Footer address */
+
+/* ---------------------------Footer address---------------------------- */
 
 .address-content {
   margin-right: 70px;
@@ -468,7 +466,7 @@ footer > .conteiner {
   color: var(--accent-color);
 }
 
-/* Footer links */
+/* ------------------------------Footer links--------------------------- */
 
 .footer-links-caption {
   display: inline-block;
@@ -507,7 +505,7 @@ footer > .conteiner {
   fill: var(--background-primary-color);
 }
 
-/* Footer mailing */
+/* ------------------------------Footer mailing----------------------- */
 
 .footer-form {
   display: flex;
@@ -530,6 +528,7 @@ footer > .conteiner {
   align-items: stretch;
 }
 
+
 .mailing-input {
   display: inline-block;
   padding-left: 16px;
@@ -546,7 +545,8 @@ footer > .conteiner {
   font-size: 16px;
   line-height: 1.25px;
 }
-/* Portfolio navigation*/
+
+/* ---------------------Portfolio navigation-------------------------- */
 
 .works-nav {
   margin-bottom: 50px;
@@ -557,7 +557,7 @@ footer > .conteiner {
   margin-right: 8px;
 }
 
-/* Portfolio Works */
+/* -----------------------------Portfolio Works---------------------- */
 
 .works-list {
   display: flex;
@@ -632,7 +632,7 @@ footer > .conteiner {
   line-height: 1.9;
 }
 
-/* Button */
+/* ---------------------------Button------------------------- */
 
 .hero-button,
 .works-button,
@@ -666,8 +666,12 @@ footer > .conteiner {
   display: flex;
   align-items: center;
   margin-left: 12px;
+  padding: 10px 29px;
 }
 .footer-button > .icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
   margin-left: 10px;
 }
 .modal-form-button {
@@ -704,7 +708,7 @@ footer > .conteiner {
   box-shadow: var(--box-shadow-works-nav);
 }
 
-/* Model window */
+/* -----------------------------Model window-------------------- */
 
 .backdrop {
   position: fixed;
@@ -770,7 +774,7 @@ footer > .conteiner {
   fill: var(--accent-color);
 }
 
-/* Model form */
+/* ----------------------Model form------------------------------ */
 
 .modal-form {
   display: flex;
@@ -801,18 +805,21 @@ footer > .conteiner {
 .modal-form-field > label,
 .modal-form-comment > label {
   margin-bottom: 4px;
-  /* color: var(--primary-text-color); */
 
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
 }
-.modal-form-field > input,
-.modal-form-comment > input {
+.modal-form-field > input {
   padding: 11px 12px;
+  padding-left: 42px;
   height: 40px;
   border: var(--border-model-input);
   border-radius: 4px;
+
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
 }
 .modal-form-comment {
   display: flex;
@@ -825,6 +832,10 @@ footer > .conteiner {
   border: var(--border-model-input);
   border-radius: 4px;
   resize: none;
+
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
 }
 .modal-form-comment > textarea::placeholder {
   color: var(--placeholder-text-color);
