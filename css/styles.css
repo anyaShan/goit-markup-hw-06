@@ -529,29 +529,23 @@ footer > .conteiner {
 
   align-items: stretch;
 }
+
 .mailing-input {
-  position: relative;
-  display: flex;
-  width: 100%;
-}
-.mailing-input > label {
-  position: absolute;
-  transform: translate(16px, -50%);
-  top: 50%;
-  left: 0;
-  color: var(--mailing-text-color);
-  font-size: 16px;
-  line-height: 1.25;
-}
-.mailing-input > input {
   display: inline-block;
   padding-left: 16px;
   width: 100%;
   border: var(--border-footer-mailing);
   border-radius: 4px;
   background-color: transparent;
-}
 
+ color: var(--mailing-text-color);
+}
+.mailing-input::placeholder {
+  color: var(--mailing-text-color);
+
+  font-size: 16px;
+  line-height: 1.25px;
+}
 /* Portfolio navigation*/
 
 .works-nav {
