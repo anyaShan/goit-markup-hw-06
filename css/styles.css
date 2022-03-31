@@ -31,6 +31,7 @@
   --border-icon-accent: 1px solid #2196f3;
   --border-footer-mailing: 1px solid rgba(255, 255, 255, 0.3);
   --border-model-input: 1px solid rgba(33, 33, 33, 0.2);
+  --border-model-input-focus: 1px solid #2196F3;
   --box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   --box-shadow-works: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 1px 1px rgba(0, 0, 0, 0.12),
@@ -802,27 +803,51 @@ footer > .conteiner {
   flex-direction: column;
   margin-bottom: 10px;
 }
-.modal-form-field > label,
-.modal-form-comment > label {
+.modal-form-field > span,
+.modal-form-comment > span {
   margin-bottom: 4px;
 
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
 }
-.modal-form-field > input {
+.modal-form-input {
   position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.modal-form-input > input {
   padding: 11px 12px;
   padding-left: 42px;
   height: 40px;
   border: var(--border-model-input);
   border-radius: 4px;
 
+  transition: border var(--transition);
+
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
 }
-
+.modal-form-input > input:hover,
+.modal-form-input > input:focus,
+.modal-form-comment > textarea:hover,
+.modal-form-comment > textarea:focus {
+  border: var(--border-model-input-focus);
+  cursor: pointer;
+}
+.modal-form-input > input:hover + .icon,
+.modal-form-input > input:focus + .icon {
+  fill: var(--accent-color);
+  cursor: pointer;
+}
+.modal-form-input > .icon {
+position: absolute;
+top: 50%;
+left: 12px;
+ transform: translateY(-50%);
+ transition: fill var(--transition);
+}
 .modal-form-comment {
   display: flex;
   flex-direction: column;
@@ -848,7 +873,7 @@ footer > .conteiner {
 .modal-form-policy {
   margin-bottom: 30px;
 }
-.modal-form-policy > label {
+.modal-form-policy > span {
   font-size: 14px;
   line-height: 1.71;
 }
