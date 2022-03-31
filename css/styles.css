@@ -722,11 +722,11 @@ footer > .conteiner {
   opacity: 1;
   transition: opacity var(--transition), visibility var(--transition);
 }
-.backdrop.is-hidden {
+/* .backdrop.is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
-}
+} */
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(1.1);
 }
@@ -811,6 +811,7 @@ footer > .conteiner {
   letter-spacing: 0.01em;
 }
 .modal-form-field > input {
+  position: relative;
   padding: 11px 12px;
   padding-left: 42px;
   height: 40px;
@@ -821,6 +822,7 @@ footer > .conteiner {
   line-height: 1.17;
   letter-spacing: 0.01em;
 }
+
 .modal-form-comment {
   display: flex;
   flex-direction: column;
